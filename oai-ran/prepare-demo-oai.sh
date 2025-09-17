@@ -12,9 +12,9 @@ HOST_GNB="sopnode-f1" # name of the Kubernetes node on which the gnb will be dep
 NS="open5gs"
 
 # Repo/Branch/TAG for code
-REPO_OAI5G_RRU="https://github.com/Ziyad-Mabrouk/oai5g-rru.git"
-TAG_OAI5G_RRU="gen-cn2"
-REPO_OAI_CN5G_FED="https://github.com/Ziyad-Mabrouk/oai-cn5g-fed"
+REPO_OAI5G_RRU="https://github.com/sopnode/oai5g-rru.git"
+TAG_OAI5G_RRU="benetel"
+REPO_OAI_CN5G_FED="https://gitlab.eurecom.fr/oai/cn5g/oai-cn5g-fed.git"
 TAG_OAI_CN5G_FED="gen-cn2"
 
 # CN mode
@@ -44,11 +44,11 @@ DNN1="streaming"
 # logs configuration
 # logs and pcap are automatically retrieved when running demo-oai.sh stop in /tmp/tmp.root/oai5g-stats.tgz
 # you should manually erase /tmp/tmp.root/oai5g-stats directory before running another scenario to prevent retrieving old logs/pcaps
-LOGS="false"
+LOGS="true"
 PCAP="false"
 MONITORING="true"
 FLEXRIC="true"
-LOCAL_INTERFACE="ens2f0"
+LOCAL_INTERFACE="ens15f2"
 #PCAP="true"
 
 # identity used to git pull
