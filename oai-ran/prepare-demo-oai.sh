@@ -15,7 +15,7 @@ NS="open5gs"
 REPO_OAI5G_RRU="https://github.com/sopnode/oai5g-rru.git"
 TAG_OAI5G_RRU="benetel"
 REPO_OAI_CN5G_FED="https://gitlab.eurecom.fr/oai/cn5g/oai-cn5g-fed.git"
-TAG_OAI_CN5G_FED="gen-cn2"
+TAG_OAI_CN5G_FED="fhi72-r2lab"
 
 # CN mode
 CN_MODE="advance"
