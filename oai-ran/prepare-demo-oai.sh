@@ -27,11 +27,12 @@ CN_MODE="advance"
 RUN_MODE="gnb-only"
 
 # RAN options
+RRU="benetel1"
 #RRU="jaguar"
 #RRU="panther"
 #RRU="rfsim"
 #RRU="b210"
-RRU="n300"
+#RRU="n300"
 #RRU="n320"
 #GNB_MODE="cudu"
 #GNB_MODE="cucpup"
@@ -46,10 +47,9 @@ DNN1="streaming"
 # you should manually erase /tmp/tmp.root/oai5g-stats directory before running another scenario to prevent retrieving old logs/pcaps
 LOGS="false"
 PCAP="false"
-MONITORING="true"
-FLEXRIC="true"
+MONITORING="false"
+FLEXRIC="false"
 LOCAL_INTERFACE="ens15f2"
-#PCAP="true"
 
 # identity used to git pull
 RC_NAME="r2labuser"
