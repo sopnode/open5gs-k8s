@@ -27,7 +27,7 @@ CN_MODE="advance"
 RUN_MODE="gnb-only"
 
 # RAN options
-RRU="benetel2"
+RRU="benetel1"
 #RRU="jaguar"
 #RRU="panther"
 #RRU="rfsim"
