@@ -17,13 +17,6 @@ spec:
         app: open5gs
         nf: ausf
     spec:
-      initContainers:
-      - name: wait-amf
-        image: busybox:1.32.0
-        env:
-        - name: DEPENDENCIES
-          value: amf-namf:80
-        command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the AMF; sleep 2; done;"]
       containers:
       - image: ghcr.io/niloysh/open5gs:v2.6.4-aio
         imagePullPolicy: IfNotPresent

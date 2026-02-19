@@ -27,18 +27,6 @@ spec:
     spec:
       # nodeSelector:
       #   kubernetes.io/hostname: cn231
-      initContainers:
-        - name: wait-ausf
-          image: busybox:1.32.0
-          env:
-            - name: DEPENDENCIES
-              value: ausf-nausf:80
-          command:
-            [
-              "sh",
-              "-c",
-              "until nc -z $DEPENDENCIES; do echo waiting for the AUSF; sleep 2; done;",
-            ]
       containers:
         - image: ghcr.io/niloysh/open5gs:v2.7.0
           name: smf
