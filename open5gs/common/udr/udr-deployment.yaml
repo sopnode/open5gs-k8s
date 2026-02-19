@@ -17,13 +17,6 @@ spec:
         app: open5gs
         nf: udr
     spec:
-      initContainers:
-      - name: wait-udm
-        image: busybox:1.32.0
-        env:
-        - name: DEPENDENCIES
-          value: udm-nudm:80
-        command: ["sh", "-c", "until nc -z $DEPENDENCIES; do echo waiting for the UDM; sleep 2; done;"]
       containers:
       - image: ghcr.io/niloysh/open5gs:v2.6.4-aio
         name: udr
