@@ -49,8 +49,7 @@ spec:
             - name: pfcp
               containerPort: 8805
               protocol: UDP
-          command: ["./open5gs-smfd"]
-          args: ["-c", "/open5gs/config/smfcfg.yaml"]
+          command: ["/bin/bash", "/open5gs/config/wrapper.sh"]
           env:
             - name: GIN_MODE
               value: release
@@ -78,3 +77,6 @@ spec:
                   items:
                     - key: smfcfg.yaml
                       path: smfcfg.yaml
+                    - key: wrapper.sh
+                      path: wrapper.sh
+                      mode: 0777

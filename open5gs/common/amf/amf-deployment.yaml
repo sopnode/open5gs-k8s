@@ -40,8 +40,8 @@ spec:
         - name: n2
           containerPort: 38412
           protocol: SCTP
-        command: ["./open5gs-amfd"]
-        args: ["-c", "/open5gs/config/amfcfg.yaml"]
+        command: ["/bin/bash"]
+        args: ["/open5gs/config/wrapper.sh"]
         env:
           - name: GIN_MODE
             value: release
